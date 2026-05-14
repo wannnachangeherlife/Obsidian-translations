@@ -1,0 +1,2138 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "chatgpt-md",
+        "version": "1.0.0",
+        "title": "[zh-cn] ChatGPT MD",
+        "description": "ChatGPT MD Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "3.1.0",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "textContent",
+                    "source": "@keyframes chatgpt-md-spin { to { transform: rotate(360deg); } }",
+                    "target": "@keyframes chatgpt-md-spin { to { transform: rotate(360deg); } }"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "This model supports tool calling (vault search, file read, web search)",
+                    "target": "该模型支持工具调用（库搜索、文件读取、网络搜索）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "div",
+                    "target": "div"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "hr",
+                    "target": "hr"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "details",
+                    "target": "details"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "summary",
+                    "target": "summary"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "button",
+                    "target": "button"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "input",
+                    "target": "input"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "label",
+                    "target": "label"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "textarea",
+                    "target": "textarea"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "createEl",
+                    "source": "span",
+                    "target": "span"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Yes, Create Folder",
+                    "target": "是，创建文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "No, I'll create it myself",
+                    "target": "否，我将自行创建"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Select which model generates the agent",
+                    "target": "选择用于生成智能体的模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Describe your agent idea",
+                    "target": "描述您的智能体构想"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "AI Model",
+                    "target": "AI 模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Agent Name",
+                    "target": "智能体名称"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Model",
+                    "target": "模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Temperature",
+                    "target": "温度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Agent Message",
+                    "target": "智能体消息"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Select Large Language Model",
+                    "target": "选择大语言模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Loading available models...",
+                    "target": "正在加载可用模型…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "e.g., A coding assistant that specializes in TypeScript and React, helps with code reviews, and suggests best practices...",
+                    "target": "例如，一个专注于 TypeScript 和 React 的编程助手，可协助代码审查并提供最佳实践建议…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Type to filter models...",
+                    "target": "输入以筛选模型…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "My Agent",
+                    "target": "我的智能体"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter the agent's initial prompt or instructions...",
+                    "target": "输入智能体的初始提示或指令…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Create folder",
+                    "target": "创建文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "[ChatGPT MD] Error writing inferred title to editor",
+                    "target": "[ChatGPT MD] 写入推断标题至编辑器时出错"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "[ChatGPT MD] No chat folder value found. Please set one in settings.",
+                    "target": "[ChatGPT MD] 未找到聊天文件夹值。请在设置中指定一个。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "[ChatGPT MD] No chat template folder value found. Please set one in settings.",
+                    "target": "[ChatGPT MD] 未找到聊天模板文件夹值。请在设置中指定一个。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "[ChatGPT MD] Error in Create new chat from template, check console",
+                    "target": "[ChatGPT MD] 从模板创建新聊天时出错，请检查控制台。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No active markdown editor found.",
+                    "target": "未找到活动的 Markdown 编辑器。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "[ChatGPT MD] Error in Create new chat with highlighted text, check console",
+                    "target": "[ChatGPT MD] 使用高亮文本创建新聊天时出错，请检查控制台。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Model not set in frontmatter. Please configure a model in settings or frontmatter.",
+                    "target": "Frontmatter 中未设置模型。请在设置或 frontmatter 中配置一个模型。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "date format cannot be empty in your ChatGPT MD settings. You can choose something like YYYYMMDDhhmmss",
+                    "target": "ChatGPT MD 设置中的日期格式不能为空。您可以选择类似 YYYYMMDDhhmmss 的格式。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "[ChatGPT MD] No active note found",
+                    "target": "[ChatGPT MD] 未找到活动笔记。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please select a model",
+                    "target": "请选择一个模型。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please describe your agent idea",
+                    "target": "请描述您的智能体构想。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "AI services not available",
+                    "target": "AI 服务不可用。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Could not parse AI response. Please try again.",
+                    "target": "无法解析 AI 响应。请重试。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please enter an agent name",
+                    "target": "请输入代理名称"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Please select or enter a model",
+                    "target": "请选择或输入一个模型"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "[ChatGPT MD] No agent folder value found. Please set one in settings.",
+                    "target": "[ChatGPT MD] 未找到代理文件夹值。请在设置中指定一个。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "OpenAI",
+                    "target": "OpenAI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Respond with a JSON object.",
+                    "target": "以 JSON 对象形式响应。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Anthropic",
+                    "target": "Anthropic"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Google Generative AI",
+                    "target": "Google Generative AI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "OpenRouter",
+                    "target": "OpenRouter"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "API Key for OpenAI",
+                    "target": "OpenAI 的 API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "API Key for OpenRouter.ai",
+                    "target": "OpenRouter.ai 的 API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "API Key for Anthropic (Claude)",
+                    "target": "Anthropic（Claude）的 API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "API Key for Google Gemini (Google AI Studio)",
+                    "target": "Google Gemini（Google AI Studio）的 API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "API Key for Z.AI (GLM models). Works with both Standard API and Coding Plan. Get your key at https://z.ai",
+                    "target": "Z.AI（GLM 模型）的 API 密钥。兼容标准 API 与编程计划。请访问 https://z.ai 获取您的密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default frontmatter for new chat files. You can change/use all of the settings exposed by the OpenAI API here: https://platform.openai.com/docs/api-reference/chat/create",
+                    "target": "新建聊天文件的默认 frontmatter。您可以在此处配置 OpenAI API 所提供的全部设置：https://platform.openai.com/docs/api-reference/chat/create"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "System message that provides context about the Obsidian/ChatGPT MD plugin environment. This helps the AI understand it's working within Obsidian and format responses appropriately.",
+                    "target": "提供关于 Obsidian/ChatGPT MD 插件环境上下文的系统消息。此消息帮助 AI 理解其运行于 Obsidian 环境中，并据此恰当地格式化响应内容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Stream responses from OpenAI",
+                    "target": "从 OpenAI 流式传输响应"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Generate text at cursor instead of end of file",
+                    "target": "在光标位置生成文本，而非文件末尾"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Automatically infer title after 4 messages have been exchanged",
+                    "target": "在交换四条消息后自动推断标题"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Language to use for title inference.",
+                    "target": "用于标题推断的语言。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default model for OpenAI chats",
+                    "target": "OpenAI 聊天的默认模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default temperature for OpenAI chats (0.0 to 2.0)",
+                    "target": "OpenAI 聊天的默认温度（0.0 至 2.0）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default max tokens for OpenAI chats",
+                    "target": "OpenAI 聊天的默认最大令牌数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default model for Anthropic chats",
+                    "target": "Anthropic 聊天的默认模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default temperature for Anthropic chats (0.0 to 1.0)",
+                    "target": "Anthropic 聊天的默认温度（0.0 至 1.0）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default max tokens for Anthropic chats",
+                    "target": "Anthropic 聊天的默认最大令牌数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default model for Gemini chats",
+                    "target": "Gemini 聊天的默认模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default temperature for Gemini chats (0.0 to 2.0)",
+                    "target": "Gemini 聊天的默认温度（0.0 至 2.0）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default max tokens for Gemini chats",
+                    "target": "Gemini 聊天的默认最大令牌数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default model for OpenRouter chats",
+                    "target": "OpenRouter 聊天的默认模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default temperature for OpenRouter chats (0.0 to 2.0)",
+                    "target": "OpenRouter 聊天的默认温度（0.0 至 2.0）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default max tokens for OpenRouter chats",
+                    "target": "OpenRouter 聊天的默认最大令牌数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "URL for Z.AI API. Two modes available:\n\\u2022 Standard API (pay-per-token): https://api.z.ai/api/paas/v4\n\\u2022 Coding Plan (subscription): https://api.z.ai/api/anthropic\n\nDefault: https://api.z.ai (uses Standard API mode)",
+                    "target": "Z.AI API 的 URL。支持两种模式：\n\\u2022 标准 API（按令牌计费）：https://api.z.ai/api/paas/v4\n\\u2022 编程计划（订阅制）：https://api.z.ai/api/anthropic\n\n默认值：https://api.z.ai（使用标准 API 模式）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default model for Z.AI chats (e.g., zai@glm-4.7)",
+                    "target": "Z.AI 聊天的默认模型（例如：zai@glm-4.7）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default temperature for Z.AI chats (0.0 to 1.0)",
+                    "target": "Z.AI 聊天的默认温度（0.0 至 1.0）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default max tokens for Z.AI chats",
+                    "target": "Z.AI 聊天的默认最大令牌数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default temperature for Ollama chats (0.0 to 2.0)",
+                    "target": "Ollama 聊天的默认温度（0.0 至 2.0）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Default temperature for LM Studio chats (0.0 to 2.0)",
+                    "target": "LM Studio 聊天的默认温度（0.0 至 2.0）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Path to folder for chat files",
+                    "target": "聊天文件的文件夹路径"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Path to folder for chat file templates",
+                    "target": "聊天文件模板的文件夹路径"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Path to folder for agent files",
+                    "target": "代理文件的文件夹路径"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Date format for chat files. Valid date blocks are: YYYY, MM, DD, hh, mm, ss",
+                    "target": "聊天文件的日期格式。有效的日期块包括：YYYY、MM、DD、hh、mm、ss"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Privacy Focus: All tool calls require your explicit approval before the LLM sees the data. Allow the AI to use tools: Search files, Read file contents, Web Search (Privacy focused Brave Search API). ",
+                    "target": "隐私优先：所有工具调用均需您明确授权后，大语言模型方可访问相关数据。允许 AI 使用以下工具：搜索文件、读取文件内容、网络搜索（采用注重隐私的 Brave Search API）。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Models allowed to use tools (vault search, file read, web search).\n\nFormat: One model pattern per line. Supports wildcards (*).\nExamples: 'gpt-4o', 'claude-*', 'gemini-1.5*'\n\nOnly tested models are included by default.",
+                    "target": "允许使用工具（库内搜索、文件读取、网络搜索）的模型。\n\n格式：每行一个模型模式。支持通配符（*）。\n示例：'gpt-4o'、'claude-*'、'gemini-1.5*'\n\n默认仅包含经过测试的模型。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "API key for Brave Search.",
+                    "target": "Brave Search 的 API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Use a custom search API endpoint instead of Brave Search",
+                    "target": "使用自定义搜索 API 端点替代 Brave Search"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "URL for custom search API endpoint (only when using Custom provider)",
+                    "target": "自定义搜索 API 端点的 URL（仅在使用 Custom 提供商时生效）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Maximum number of search results to return (1-10)",
+                    "target": "返回的搜索结果最大数量（1-10）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Enable detailed logging for debugging tool operations. Messages will appear in the console.",
+                    "target": "启用详细日志记录以调试工具操作。消息将显示在控制台中。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Removing trailing /api/ from Ollama URL",
+                    "target": "从 Ollama URL 中移除末尾的 /api/"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Removing trailing /api/ from OpenRouter URL",
+                    "target": "从 OpenRouter URL 中移除末尾的 /api/"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Removing trailing slash from OpenAI URL",
+                    "target": "从 OpenAI URL 中移除末尾的斜杠"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Search the Obsidian vault for files by name or content. Returns file paths, names, and content previews. Use this to find relevant notes before reading them.",
+                    "target": "在 Obsidian 保险库中按文件名或内容搜索文件。返回文件路径、名称和内容预览。在读取笔记前，使用此功能查找相关笔记。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Read the full contents of specific files from the vault. User will be asked to approve which files to share. Use this after searching to get complete file contents.",
+                    "target": "从保险库中读取指定文件的完整内容。系统将提示用户批准共享哪些文件。在搜索后使用此功能以获取完整的文件内容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Search the web for information on a topic. Returns titles, URLs, and snippets from search results. User will be asked to approve which results to share.",
+                    "target": "在网络上搜索某个主题的信息。返回搜索结果的标题、URL 和摘要片段。系统将提示用户批准共享哪些结果。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "User declined tool execution",
+                    "target": "用户拒绝执行工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Tool not found or has no execute function",
+                    "target": "未找到工具或该工具无执行函数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "מחרוזת",
+                    "target": "מחרוזת"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "מספר",
+                    "target": "מספר"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "ערך בוליאני",
+                    "target": "ערך בוליאני"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "BigInt",
+                    "target": "BigInt"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "תאריך",
+                    "target": "תאריך"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "מערך",
+                    "target": "数组"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "אובייקט",
+                    "target": "对象"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "ערך ריק (null)",
+                    "target": "空值 (null)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "ערך לא מוגדר (undefined)",
+                    "target": "未定义值 (undefined)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "סימבול (Symbol)",
+                    "target": "符号 (Symbol)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "פונקציה",
+                    "target": "函数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "מפה (Map)",
+                    "target": "映射 (Map)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "קבוצה (Set)",
+                    "target": "集合 (Set)"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "קובץ",
+                    "target": "文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Promise",
+                    "target": "Promise"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "NaN",
+                    "target": "NaN"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "ערך לא ידוע",
+                    "target": "未知值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "ערך",
+                    "target": "值"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "קלט",
+                    "target": "输入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "כתובת אימייל",
+                    "target": "电子邮件地址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "כתובת רשת",
+                    "target": "网址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "אימוג'י",
+                    "target": "表情符号"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "nanoid",
+                    "target": "nanoid"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "cuid",
+                    "target": "cuid"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "XID",
+                    "target": "XID"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "תאריך וזמן ISO",
+                    "target": "ISO 日期和时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "תאריך ISO",
+                    "target": "ISO 日期"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "זמן ISO",
+                    "target": "ISO 时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "משך זמן ISO",
+                    "target": "ISO 持续时间"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "כתובת IPv4",
+                    "target": "IPv4 地址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "כתובת IPv6",
+                    "target": "IPv6 地址"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "טווח IPv4",
+                    "target": "IPv4 范围"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "טווח IPv6",
+                    "target": "IPv6 范围"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "מחרוזת בבסיס 64",
+                    "target": "Base64 字符串"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "מחרוזת בבסיס 64 לכתובות רשת",
+                    "target": "用于网络地址的 Base64 字符串"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "מחרוזת JSON",
+                    "target": "JSON 字符串"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "מספר E.164",
+                    "target": "E.164 格式号码"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "JWT",
+                    "target": "JWT"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Failed to process error response",
+                    "target": "未能处理错误响应"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Failed to process successful response",
+                    "target": "未能处理成功响应"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Invalid JSON response",
+                    "target": "无效的 JSON 响应"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Response body is empty",
+                    "target": "响应正文为空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Failed to read response as array buffer",
+                    "target": "无法将响应读取为 ArrayBuffer"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "system messages are removed for this model",
+                    "target": "此模型已移除系统消息"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "logprobs is not supported for reasoning models",
+                    "target": "推理模型不支持 logprobs"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "logitBias is not supported for reasoning models",
+                    "target": "推理模型不支持 logitBias"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "topLogprobs is not supported for reasoning models",
+                    "target": "推理模型不支持 topLogprobs"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Expected 'function' type.",
+                    "target": "预期类型为 'function'。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Expected 'id' to be a string.",
+                    "target": "预期 'id' 为字符串。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Expected 'function.name' to be a string.",
+                    "target": "预期 'function.name' 为字符串。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Unexpected system message in prompt: ${content}",
+                    "target": "提示中包含意外的系统消息：${content}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "The 'openai-compatible' key in providerOptions is deprecated. Use 'openaiCompatible' instead.",
+                    "target": "providerOptions 中的 'openai-compatible' 键已弃用，请改用 'openaiCompatible'。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "unsupported custom tool content part",
+                    "target": "不支持的自定义工具内容部分"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "unsupported reasoning metadata",
+                    "target": "不支持的推理元数据"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "sending reasoning content is disabled for this model",
+                    "target": "此模型已禁用发送推理内容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "mcp tool use server name is required and must be a string",
+                    "target": "MCP 工具使用服务器名称为必填项，且必须为字符串"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "code execution tool is required when using skills",
+                    "target": "使用技能时必须提供代码执行工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Both apiKey and authToken were provided. Please use only one authentication method.",
+                    "target": "同时提供了 apiKey 和 authToken。请仅使用一种身份验证方法。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "No operation name returned from API",
+                    "target": "API 未返回操作名称"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Video generation request was aborted",
+                    "target": "视频生成请求已被中止"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "No valid videos in response",
+                    "target": "响应中无有效视频"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "No choice in response",
+                    "target": "响应中无选择项"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "No choice in OpenRouter completion response",
+                    "target": "OpenRouter 完成响应中无选择项"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Must be a Buffer",
+                    "target": "必须为 Buffer"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "maxOutputTokens must be an integer",
+                    "target": "maxOutputTokens 必须为整数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "maxOutputTokens must be >= 1",
+                    "target": "maxOutputTokens 必须 ≥ 1"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "temperature must be a number",
+                    "target": "temperature 必须为数字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "topP must be a number",
+                    "target": "topP 必须为数字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "topK must be a number",
+                    "target": "topK 必须为数字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "presencePenalty must be a number",
+                    "target": "presencePenalty 必须为数字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "frequencyPenalty must be a number",
+                    "target": "frequencyPenalty 必须为数字"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "seed must be an integer",
+                    "target": "seed 必须为整数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "prompt or messages must be defined",
+                    "target": "必须定义 prompt 或 messages"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "prompt and messages cannot be defined at the same time",
+                    "target": "不能同时定义 prompt 和 messages"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "system must be a string, SystemModelMessage, or array of SystemModelMessage",
+                    "target": "system 必须为字符串、SystemModelMessage 或 SystemModelMessage 数组"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "messages must not be empty",
+                    "target": "messages 不得为空"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "The messages do not match the ModelMessage[] schema.",
+                    "target": "messages 不符合 ModelMessage[] 架构"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "maxRetries must be an integer",
+                    "target": "maxRetries 必须为整数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "maxRetries must be >= 0",
+                    "target": "maxRetries 必须 ≥ 0"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "No object generated: could not parse the response.",
+                    "target": "未生成对象：无法解析响应"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "No object generated: response did not match schema.",
+                    "target": "未生成对象：响应不符合架构"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "Type must start with \"data-\"",
+                    "target": "类型必须以 \"data-\" 开头"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "message",
+                    "source": "No output generated. Check the stream for errors.",
+                    "target": "未生成输出。请检查流中是否存在错误"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "computer",
+                    "target": "computer"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "bash",
+                    "target": "bash"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "memory",
+                    "target": "memory"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "json",
+                    "target": "json"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "InvalidDataContentError",
+                    "target": "InvalidDataContentError"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GatewayError",
+                    "target": "GatewayError"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "GatewayAuthenticationError",
+                    "target": "GatewayAuthenticationError"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "text",
+                    "target": "text"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "object",
+                    "target": "object"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "array",
+                    "target": "array"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "choice",
+                    "target": "choice"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "OpenAI API Key",
+                    "target": "OpenAI API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "OpenRouter.ai API Key",
+                    "target": "OpenRouter.ai API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Anthropic API Key",
+                    "target": "Anthropic API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Gemini API Key",
+                    "target": "Gemini API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Z.AI API Key",
+                    "target": "Z.AI API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Default Chat Frontmatter",
+                    "target": "默认聊天 Frontmatter"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Plugin System Message",
+                    "target": "插件系统消息"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Stream",
+                    "target": "流式传输"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Generate at Cursor",
+                    "target": "在光标处生成"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Automatically Infer Title",
+                    "target": "自动推断标题"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Infer Title Language",
+                    "target": "推断标题语言"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "API URL",
+                    "target": "API URL"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Default Model",
+                    "target": "默认模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Default Temperature",
+                    "target": "默认温度"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Default Max Tokens",
+                    "target": "默认最大令牌数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Chat Folder",
+                    "target": "聊天文件夹"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Chat Template Folder",
+                    "target": "聊天模板文件夹"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Agent Folder",
+                    "target": "智能体文件夹"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Date Format",
+                    "target": "日期格式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Heading Level",
+                    "target": "标题级别"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Enable AI Tool Calling (Experimental, read only)",
+                    "target": "启用 AI 工具调用（实验性，仅限读取）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Tool-Enabled Models",
+                    "target": "支持工具的模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Brave Search API Key",
+                    "target": "Brave Search API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Alternative Search Provider",
+                    "target": "替代搜索提供商"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Custom Search API URL",
+                    "target": "自定义搜索 API URL"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Max Web Search Results",
+                    "target": "最大网络搜索结果数"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Debug Mode",
+                    "target": "调试模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Chat",
+                    "target": "聊天"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Select Model",
+                    "target": "选择模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Add divider",
+                    "target": "添加分隔线"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Add comment block",
+                    "target": "添加注释块"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Stop streaming",
+                    "target": "停止流式传输"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Infer title",
+                    "target": "推断标题"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create new chat with highlighted text",
+                    "target": "使用高亮文本创建新对话"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create new chat from template",
+                    "target": "从模板创建新对话"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Clear chat (except frontmatter)",
+                    "target": "清空对话（保留前置元数据）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Choose agent",
+                    "target": "选择智能体"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Create new agent",
+                    "target": "创建新智能体"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "your openAI API Key",
+                    "target": "your openAI API Key"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "your openRouter API Key",
+                    "target": "您的 OpenRouter API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "your Anthropic API Key",
+                    "target": "您的 Anthropic API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "your Gemini API Key",
+                    "target": "您的 Gemini API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "your Z.AI API Key",
+                    "target": "您的 Z.AI API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "gpt-5.2\ngpt-5.2-chat-latest\no3\nclaude-opus-4-5",
+                    "target": "gpt-5.2\ngpt-5.2-chat-latest\no3\nclaude-opus-4-5"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "your Brave Search API key",
+                    "target": "您的 Brave Search API 密钥"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Tool executed successfully and returned this image as a response",
+                    "target": "工具已成功执行并返回此图像作为响应"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Configure default settings for each AI provider. Click to expand.",
+                    "target": "配置各 AI 提供商的默认设置。点击以展开。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Select All",
+                    "target": "全选"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Deselect All",
+                    "target": "取消全选"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Select which files to share:",
+                    "target": "选择要共享的文件："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Select which results to share:",
+                    "target": "选择要共享的结果："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Select files to share:",
+                    "target": "选择要共享的文件："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Search query:",
+                    "target": "搜索查询："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "You can select which files to share on the next screen.",
+                    "target": "您可以在下一个界面选择要共享的文件。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Tools",
+                    "target": "工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Create New Agent",
+                    "target": "创建新智能体"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "How would you like to create your agent?",
+                    "target": "您希望如何创建您的智能体？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "AI Agent Wizard",
+                    "target": "AI 智能体向导"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Back",
+                    "target": "返回"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Create with AI",
+                    "target": "通过 AI 创建"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Creating your agent...",
+                    "target": "正在创建您的智能体……"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "AI is crafting your agent's configuration...",
+                    "target": "AI 正在精心构建您的智能体配置……"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Create Agent",
+                    "target": "创建智能体"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Untitled",
+                    "target": "无标题"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setButtonText(\"Yes, Create Folder\")",
+                    "target": "setButtonText(\"是，创建文件夹\")"
+                },
+                {
+                    "source": "setTooltip(\"Create folder\")",
+                    "target": "setTooltip(\"创建文件夹\")"
+                },
+                {
+                    "source": "setButtonText(\"No, I'll create it myself\")",
+                    "target": "setButtonText(\"否，我将自行创建\")"
+                },
+                {
+                    "source": "Notice(\"[ChatGPT MD] Error writing inferred title to editor\")",
+                    "target": "Notice(\"[ChatGPT MD] 将推断出的标题写入编辑器时出错\")"
+                },
+                {
+                    "source": "Notice(`[ChatGPT MD] No ${r} found. One must be created to use the plugin. Set one in settings and make sure it exists.`)",
+                    "target": "Notice(`未找到 ${r}。必须创建一个才能使用该插件。请在设置中指定一个并确保其存在。`)"
+                },
+                {
+                    "source": "Notice(`Error getting folder: ${this.settings.chatTemplateFolder}`)",
+                    "target": "Notice(`获取文件夹时出错：${this.settings.chatTemplateFolder}`)"
+                },
+                {
+                    "source": "Notice(`Selected ${t.title}`)",
+                    "target": "Notice(`已选择 ${t.title}`)"
+                },
+                {
+                    "source": "Notice(\"[ChatGPT MD] No chat folder value found. Please set one in settings.\")",
+                    "target": "Notice(\"[ChatGPT MD] 未找到聊天文件夹值。请在设置中指定一个。\")"
+                },
+                {
+                    "source": "Notice(\"[ChatGPT MD] No chat template folder value found. Please set one in settings.\")",
+                    "target": "Notice(\"[ChatGPT MD] 未找到聊天模板文件夹值。请在设置中指定一个。\")"
+                },
+                {
+                    "source": "Notice(\"[ChatGPT MD] Error in Create new chat from template, check console\")",
+                    "target": "Notice(\"[ChatGPT MD] 从模板创建新聊天时出错，请检查控制台\")"
+                },
+                {
+                    "source": "Notice(\"No active markdown editor found.\")",
+                    "target": "Notice(\"未找到活动的 Markdown 编辑器。\")"
+                },
+                {
+                    "source": "Notice(\"[ChatGPT MD] Error in Create new chat with highlighted text, check console\")",
+                    "target": "Notice(\"[ChatGPT MD] 在使用高亮文本创建新聊天时出错，请检查控制台\")"
+                },
+                {
+                    "source": "log(\"Hello World\")",
+                    "target": "log(\"Hello World\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Select Large Language Model\")",
+                    "target": "setPlaceholder(\"选择大型语言模型\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Loading available models...\")",
+                    "target": "setPlaceholder(\"正在加载可用模型……\")"
+                },
+                {
+                    "source": "Notice(`Selected model: ${t}`)",
+                    "target": "Notice(`已选择模型：${t}`)"
+                },
+                {
+                    "source": "Notice(`Error setting model: ${o.message}`)",
+                    "target": "Notice(`设置模型时出错：${o.message}`)"
+                },
+                {
+                    "source": "Notice(\"Model not set in frontmatter. Please configure a model in settings or frontmatter.\")",
+                    "target": "Notice(\"前置元数据中未设置模型。请在设置或前置元数据中配置一个模型。\")"
+                },
+                {
+                    "source": "setText(`Calling ${l.model}`)",
+                    "target": "setText(`正在调用 ${l.model}`)"
+                },
+                {
+                    "source": "Notice(\"date format cannot be empty in your ChatGPT MD settings. You can choose something like YYYYMMDDhhmmss\")",
+                    "target": "Notice(\"您的 ChatGPT MD 设置中日期格式不能为空。您可以选择类似 YYYYMMDDhhmmss 的格式\")"
+                },
+                {
+                    "source": "Notice(\"[ChatGPT MD] No active note found\")",
+                    "target": "Notice(\"[ChatGPT MD] 未找到活动笔记\")"
+                },
+                {
+                    "source": "Notice(`Agent set to \"${r.title}\"`)",
+                    "target": "Notice(`代理已设置为 \"${r.title}\"`)"
+                },
+                {
+                    "source": "Notice(`[ChatGPT MD] Error setting agent: ${o.message}`)",
+                    "target": "Notice(`[ChatGPT MD] 设置代理时出错：${o.message}`)"
+                },
+                {
+                    "source": "setName(\"Describe your agent idea\")",
+                    "target": "setName(\"描述您的代理构想\")"
+                },
+                {
+                    "source": "setPlaceholder(\"e.g., A coding assistant that specializes in TypeScript and React, helps with code reviews, and suggests best practices...\")",
+                    "target": "setPlaceholder(\"例如，一个专注于 TypeScript 和 React 的编程助手，可协助代码审查并提供最佳实践建议……\")"
+                },
+                {
+                    "source": "setName(\"AI Model\")",
+                    "target": "setName(\"AI 模型\")"
+                },
+                {
+                    "source": "setDesc(\"Select which model generates the agent\")",
+                    "target": "setDesc(\"选择用于生成代理的模型\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Type to filter models...\")",
+                    "target": "setPlaceholder(\"输入以筛选模型……\")"
+                },
+                {
+                    "source": "setName(\"Agent Name\")",
+                    "target": "setName(\"代理名称\")"
+                },
+                {
+                    "source": "setPlaceholder(\"My Agent\")",
+                    "target": "setPlaceholder(\"我的代理\")"
+                },
+                {
+                    "source": "setName(\"Agent Message\")",
+                    "target": "setName(\"Agent Message\")"
+                },
+                {
+                    "source": "setPlaceholder(\"Enter the agent's initial prompt or instructions...\")",
+                    "target": "setPlaceholder(\"输入代理的初始提示或指令...\")"
+                },
+                {
+                    "source": "Notice(\"Please select a model\")",
+                    "target": "Notice(\"请选择一个模型\")"
+                },
+                {
+                    "source": "Notice(\"Please describe your agent idea\")",
+                    "target": "Notice(\"请描述您的代理构想\")"
+                },
+                {
+                    "source": "Notice(\"AI services not available\")",
+                    "target": "Notice(\"AI 服务不可用\")"
+                },
+                {
+                    "source": "Notice(\"Could not parse AI response. Please try again.\")",
+                    "target": "Notice(\"无法解析 AI 响应，请重试。\")"
+                },
+                {
+                    "source": "Notice(`AI wizard error: ${r instanceof Error?r.message:String(r)}`)",
+                    "target": "Notice(`AI 向导错误：${r instanceof Error?r.message:String(r)}`)"
+                },
+                {
+                    "source": "Notice(\"Please enter an agent name\")",
+                    "target": "Notice(\"请输入代理名称\")"
+                },
+                {
+                    "source": "Notice(\"Please select or enter a model\")",
+                    "target": "Notice(\"请选择或输入一个模型\")"
+                },
+                {
+                    "source": "Notice(`Agent \"${this.name}\" created`)",
+                    "target": "Notice(`代理 \"${this.name}\" 已创建`)"
+                },
+                {
+                    "source": "Notice(`[ChatGPT MD] Error creating agent: ${r.message}`)",
+                    "target": "Notice(`[ChatGPT MD] 创建代理时出错：${r.message}`)"
+                },
+                {
+                    "source": "Notice(\"[ChatGPT MD] No agent folder value found. Please set one in settings.\")",
+                    "target": "Notice(\"[ChatGPT MD] 未找到代理文件夹值。请在设置中指定一个。\")"
+                },
+                {
+                    "source": "text:`[ChatGPT MD] No ${this.folderName} folder found.`",
+                    "target": "text:`[ChatGPT MD] 未找到 ${this.folderName} 文件夹。`"
+                },
+                {
+                    "source": "text:`If you choose \"Yes, Create\", the plugin will automatically create a folder at: ${this.folderPath}. You can change this path in the plugin settings.`",
+                    "target": "text:`如果选择“是，创建”，插件将自动在以下路径创建文件夹：${this.folderPath}。您可以在插件设置中更改此路径。`"
+                },
+                {
+                    "source": "description:\"Respond with a JSON object.\"",
+                    "target": "description:\"以 JSON 对象形式回复。\""
+                },
+                {
+                    "source": "text:\"Tool executed successfully and returned this image as a response\"",
+                    "target": "text:\"工具已成功执行，并返回了此图像作为响应\""
+                },
+                {
+                    "source": "description:\"Google Generative AI\"",
+                    "target": "description:\"Google 生成式 AI\""
+                },
+                {
+                    "source": "name:\"OpenAI API Key\"",
+                    "target": "name:\"OpenAI API 密钥\""
+                },
+                {
+                    "source": "description:\"API Key for OpenAI\"",
+                    "target": "description:\"OpenAI 的 API 密钥\""
+                },
+                {
+                    "source": "name:\"OpenRouter.ai API Key\"",
+                    "target": "name:\"OpenRouter.ai API 密钥\""
+                },
+                {
+                    "source": "description:\"API Key for OpenRouter.ai\"",
+                    "target": "description:\"OpenRouter.ai 的 API 密钥\""
+                },
+                {
+                    "source": "name:\"Anthropic API Key\"",
+                    "target": "name:\"Anthropic API 密钥\""
+                },
+                {
+                    "source": "description:\"API Key for Anthropic (Claude)\"",
+                    "target": "description:\"Anthropic（Claude）的 API 密钥\""
+                },
+                {
+                    "source": "name:\"Gemini API Key\"",
+                    "target": "name:\"Gemini API 密钥\""
+                },
+                {
+                    "source": "description:\"API Key for Google Gemini (Google AI Studio)\"",
+                    "target": "description:\"Google Gemini（Google AI Studio）的 API 密钥\""
+                },
+                {
+                    "source": "name:\"Z.AI API Key\"",
+                    "target": "name:\"Z.AI API 密钥\""
+                },
+                {
+                    "source": "description:\"API Key for Z.AI (GLM models). Works with both Standard API and Coding Plan. Get your key at https://z.ai\"",
+                    "target": "description:\"Z.AI（GLM 模型）的 API 密钥。同时兼容标准 API 与编程计划。请在 https://z.ai 获取您的密钥\""
+                },
+                {
+                    "source": "name:\"Default Chat Frontmatter\"",
+                    "target": "name:\"默认聊天 Frontmatter\""
+                },
+                {
+                    "source": "description:\"Default frontmatter for new chat files. You can change/use all of the settings exposed by the OpenAI API here: https://platform.openai.com/docs/api-reference/chat/create\"",
+                    "target": "description:\"新建聊天文件时使用的默认 frontmatter。您可以在此处配置 OpenAI API 所提供的全部设置：https://platform.openai.com/docs/api-reference/chat/create\""
+                },
+                {
+                    "source": "name:\"Plugin System Message\"",
+                    "target": "name:\"插件系统消息\""
+                },
+                {
+                    "source": "description:\"System message that provides context about the Obsidian/ChatGPT MD plugin environment. This helps the AI understand it's working within Obsidian and format responses appropriately.\"",
+                    "target": "description:\"系统消息，提供有关 Obsidian/ChatGPT MD 插件环境的上下文。这有助于 AI 理解其正在 Obsidian 环境内运行，并据此恰当地格式化响应。\""
+                },
+                {
+                    "source": "description:\"Stream responses from OpenAI\"",
+                    "target": "description:\"从 OpenAI 流式传输响应\""
+                },
+                {
+                    "source": "name:\"Generate at Cursor\"",
+                    "target": "name:\"在光标处生成\""
+                },
+                {
+                    "source": "description:\"Generate text at cursor instead of end of file\"",
+                    "target": "description:\"在光标位置生成文本，而非文件末尾\""
+                },
+                {
+                    "source": "name:\"Automatically Infer Title\"",
+                    "target": "name:\"自动推断标题\""
+                },
+                {
+                    "source": "description:\"Automatically infer title after 4 messages have been exchanged\"",
+                    "target": "description:\"在交换四条消息后自动推断标题\""
+                },
+                {
+                    "source": "name:\"Infer Title Language\"",
+                    "target": "name:\"推断标题语言\""
+                },
+                {
+                    "source": "description:\"Language to use for title inference.\"",
+                    "target": "description:\"用于标题推断的语言。\""
+                },
+                {
+                    "source": "name:\"API URL\"",
+                    "target": "name:\"API URL\""
+                },
+                {
+                    "source": "description:`URL for OpenAI API\nDefault URL: ${Ke.url}`",
+                    "target": "description:`OpenAI API 的 URL\n默认 URL：${Ke.url}`"
+                },
+                {
+                    "source": "name:\"Default Model\"",
+                    "target": "name:\"默认模型\""
+                },
+                {
+                    "source": "description:\"Default model for OpenAI chats\"",
+                    "target": "description:\"OpenAI 聊天的默认模型\""
+                },
+                {
+                    "source": "name:\"Default Temperature\"",
+                    "target": "name:\"默认温度\""
+                },
+                {
+                    "source": "name:\"Default Max Tokens\"",
+                    "target": "name:\"默认最大令牌数\""
+                },
+                {
+                    "source": "description:\"Default max tokens for OpenAI chats\"",
+                    "target": "description:\"OpenAI 聊天的默认最大令牌数\""
+                },
+                {
+                    "source": "description:`URL for Anthropic API\nDefault URL: ${At.url}`",
+                    "target": "description:`Anthropic API 的 URL\n默认 URL：${At.url}`"
+                },
+                {
+                    "source": "description:\"Default model for Anthropic chats\"",
+                    "target": "description:\"Anthropic 聊天的默认模型\""
+                },
+                {
+                    "source": "description:\"Default temperature for Anthropic chats (0.0 to 1.0)\"",
+                    "target": "description:\"Anthropic 聊天的默认温度（0.0 至 1.0）\""
+                },
+                {
+                    "source": "description:\"Default max tokens for Anthropic chats\"",
+                    "target": "description:\"Anthropic 聊天的默认最大令牌数\""
+                },
+                {
+                    "source": "description:`URL for Gemini API\nDefault URL: ${xt.url}`",
+                    "target": "description:`Gemini API 的 URL\n默认 URL：${xt.url}`"
+                },
+                {
+                    "source": "description:\"Default model for Gemini chats\"",
+                    "target": "description:\"Gemini 聊天的默认模型\""
+                },
+                {
+                    "source": "description:\"Default max tokens for Gemini chats\"",
+                    "target": "description:\"Gemini 聊天的默认最大令牌数\""
+                },
+                {
+                    "source": "description:`URL for OpenRouter.ai API\nDefault URL: ${dt.url}`",
+                    "target": "description:`OpenRouter.ai API 的 URL\n默认 URL：${dt.url}`"
+                },
+                {
+                    "source": "description:\"Default model for OpenRouter chats\"",
+                    "target": "description:\"OpenRouter 聊天的默认模型\""
+                },
+                {
+                    "source": "description:\"Default max tokens for OpenRouter chats\"",
+                    "target": "description:\"OpenRouter 聊天的默认最大令牌数\""
+                },
+                {
+                    "source": "description:\"Default model for Z.AI chats (e.g., zai@glm-4.7)\"",
+                    "target": "description:\"Z.AI 聊天的默认模型（例如：zai@glm-4.7）\""
+                },
+                {
+                    "source": "description:\"Default temperature for Z.AI chats (0.0 to 1.0)\"",
+                    "target": "description:\"Z.AI 聊天的默认温度（0.0 至 1.0）\""
+                },
+                {
+                    "source": "description:\"Default max tokens for Z.AI chats\"",
+                    "target": "description:\"Z.AI 聊天的默认最大令牌数\""
+                },
+                {
+                    "source": "description:`URL for Ollama API\nDefault URL: ${Jr.url}`",
+                    "target": "description:`Ollama API 的 URL\n默认 URL：${Jr.url}`"
+                },
+                {
+                    "source": "description:`URL for LM Studio API\nDefault URL: ${bt.url}`",
+                    "target": "description:`LM Studio API 的 URL\n默认 URL：${bt.url}`"
+                },
+                {
+                    "source": "name:\"Chat Folder\"",
+                    "target": "name:\"聊天文件夹\""
+                },
+                {
+                    "source": "description:\"Path to folder for chat files\"",
+                    "target": "description:\"聊天文件所在文件夹的路径\""
+                },
+                {
+                    "source": "name:\"Chat Template Folder\"",
+                    "target": "name:\"聊天模板文件夹\""
+                },
+                {
+                    "source": "description:\"Path to folder for chat file templates\"",
+                    "target": "description:\"聊天文件模板所在文件夹的路径\""
+                },
+                {
+                    "source": "name:\"Agent Folder\"",
+                    "target": "name:\"智能体文件夹\""
+                },
+                {
+                    "source": "description:\"Path to folder for agent files\"",
+                    "target": "description:\"智能体文件所在文件夹的路径\""
+                },
+                {
+                    "source": "name:\"Date Format\"",
+                    "target": "name:\"日期格式\""
+                },
+                {
+                    "source": "description:\"Date format for chat files. Valid date blocks are: YYYY, MM, DD, hh, mm, ss\"",
+                    "target": "description:\"聊天文件的日期格式。有效的日期占位符包括：YYYY、MM、DD、hh、mm、ss\""
+                },
+                {
+                    "source": "name:\"Heading Level\"",
+                    "target": "name:\"标题层级\""
+                },
+                {
+                    "source": "name:\"Enable AI Tool Calling (Experimental, read only)\"",
+                    "target": "name:\"启用 AI 工具调用（实验性，仅限读取）\""
+                },
+                {
+                    "source": "description:\"Privacy Focus: All tool calls require your explicit approval before the LLM sees the data. Allow the AI to use tools: Search files, Read file contents, Web Search (Privacy focused Brave Search API). \"",
+                    "target": "description:\"隐私优先：所有工具调用均需您明确授权后，大语言模型方可访问相关数据。允许 AI 使用以下工具：搜索文件、读取文件内容、网络搜索（采用注重隐私的 Brave Search API）。\""
+                },
+                {
+                    "source": "name:\"Tool-Enabled Models\"",
+                    "target": "name:\"启用工具的模型\""
+                },
+                {
+                    "source": "description:`Models allowed to use tools (vault search, file read, web search).\n\nFormat: One model pattern per line. Supports wildcards (*).\nExamples: 'gpt-4o', 'claude-*', 'gemini-1.5*'\n\nOnly tested models are included by default.`",
+                    "target": "description:`允许使用工具（库内搜索、读取文件、网络搜索）的模型。\n\n格式：每行一个模型模式，支持通配符（*）。\n示例：'gpt-4o'、'claude-*'、'gemini-1.5*'\n\n默认仅包含经过测试的模型。`"
+                },
+                {
+                    "source": "name:\"Brave Search API Key\"",
+                    "target": "name:\"Brave Search API 密钥\""
+                },
+                {
+                    "source": "description:\"API key for Brave Search.\"",
+                    "target": "description:\"Brave Search 的 API 密钥。\""
+                },
+                {
+                    "source": "name:\"Alternative Search Provider\"",
+                    "target": "name:\"替代搜索提供商\""
+                },
+                {
+                    "source": "description:\"Use a custom search API endpoint instead of Brave Search\"",
+                    "target": "description:\"使用自定义搜索 API 端点替代 Brave Search\""
+                },
+                {
+                    "source": "name:\"Custom Search API URL\"",
+                    "target": "name:\"自定义搜索 API URL\""
+                },
+                {
+                    "source": "description:\"URL for custom search API endpoint (only when using Custom provider)\"",
+                    "target": "description:\"自定义搜索 API 端点的 URL（仅在使用“自定义”提供商时生效）\""
+                },
+                {
+                    "source": "name:\"Max Web Search Results\"",
+                    "target": "name:\"最大网络搜索结果数\""
+                },
+                {
+                    "source": "description:\"Maximum number of search results to return (1-10)\"",
+                    "target": "description:\"要返回的搜索结果最大数量（1-10）\""
+                },
+                {
+                    "source": "name:\"Debug Mode\"",
+                    "target": "name:\"调试模式\""
+                },
+                {
+                    "source": "description:\"Enable detailed logging for debugging tool operations. Messages will appear in the console.\"",
+                    "target": "description:\"启用详细日志记录以调试工具操作。消息将显示在控制台中。\""
+                },
+                {
+                    "source": "text:\"Configure default settings for each AI provider. Click to expand.\"",
+                    "target": "text:\"配置每个 AI 提供商的默认设置。点击以展开。\""
+                },
+                {
+                    "source": "description:\"Removing trailing /api/ from Ollama URL\"",
+                    "target": "description:\"从 Ollama URL 中移除末尾的 /api/\""
+                },
+                {
+                    "source": "description:\"Removing trailing /api/ from OpenRouter URL\"",
+                    "target": "description:\"从 OpenRouter URL 中移除末尾的 /api/\""
+                },
+                {
+                    "source": "description:\"Removing trailing slash from OpenAI URL\"",
+                    "target": "description:\"从 OpenAI URL 中移除末尾的斜杠\""
+                },
+                {
+                    "source": "text:\"Select All\"",
+                    "target": "text:\"全选\""
+                },
+                {
+                    "source": "text:\"Deselect All\"",
+                    "target": "text:\"取消全选\""
+                },
+                {
+                    "source": "text:\"Select which files to share:\"",
+                    "target": "text:\"选择要共享的文件：\""
+                },
+                {
+                    "source": "text:\"Select which results to share:\"",
+                    "target": "text:\"选择要共享的结果：\""
+                },
+                {
+                    "source": "search:\"ChatGPT MD - Vault Search\"",
+                    "target": "search:\"ChatGPT MD - 保险库搜索\""
+                },
+                {
+                    "source": "search:\"ChatGPT MD - Web Search\"",
+                    "target": "search:\"ChatGPT MD - 网络搜索\""
+                },
+                {
+                    "source": "text:\"Select files to share:\"",
+                    "target": "text:\"选择要共享的文件：\""
+                },
+                {
+                    "source": "text:\"Search query:\"",
+                    "target": "text:\"搜索查询：\""
+                },
+                {
+                    "source": "text:\"You can select which files to share on the next screen.\"",
+                    "target": "text:\"您可以在下一个屏幕上选择要共享的文件。\""
+                },
+                {
+                    "source": "description:\"Search the Obsidian vault for files by name or content. Returns file paths, names, and content previews. Use this to find relevant notes before reading them.\"",
+                    "target": "description:\"在 Obsidian 保险库中按文件名或内容搜索文件。返回文件路径、名称和内容预览。使用此功能可在阅读前查找相关笔记。\""
+                },
+                {
+                    "source": "description:\"Read the full contents of specific files from the vault. User will be asked to approve which files to share. Use this after searching to get complete file contents.\"",
+                    "target": "description:\"读取保险库中指定文件的完整内容。系统将提示用户批准要共享的文件。请在搜索后使用此功能以获取完整的文件内容。\""
+                },
+                {
+                    "source": "description:\"Search the web for information on a topic. Returns titles, URLs, and snippets from search results. User will be asked to approve which results to share.\"",
+                    "target": "description:\"在网络上搜索某个主题的信息。返回搜索结果的标题、URL 和摘要片段。系统将提示用户批准要共享的结果。\""
+                },
+                {
+                    "source": "name:\"Select Model\"",
+                    "target": "name:\"选择模型\""
+                },
+                {
+                    "source": "name:\"Add divider\"",
+                    "target": "name:\"添加分隔线\""
+                },
+                {
+                    "source": "name:\"Add comment block\"",
+                    "target": "name:\"添加注释块\""
+                },
+                {
+                    "source": "name:\"Stop streaming\"",
+                    "target": "name:\"停止流式传输\""
+                },
+                {
+                    "source": "name:\"Infer title\"",
+                    "target": "name:\"推断标题\""
+                },
+                {
+                    "source": "name:\"Create new chat with highlighted text\"",
+                    "target": "name:\"使用高亮文本创建新聊天\""
+                },
+                {
+                    "source": "name:\"Create new chat from template\"",
+                    "target": "name:\"从模板创建新聊天\""
+                },
+                {
+                    "source": "name:\"Clear chat (except frontmatter)\"",
+                    "target": "name:\"清空聊天（保留前置元数据）\""
+                },
+                {
+                    "source": "text:\"Create New Agent\"",
+                    "target": "text:\"创建新智能体\""
+                },
+                {
+                    "source": "text:\"How would you like to create your agent?\"",
+                    "target": "text:\"您希望如何创建您的智能体？\""
+                },
+                {
+                    "source": "text:\"AI Agent Wizard\"",
+                    "target": "text:\"AI 智能体向导\""
+                },
+                {
+                    "source": "text:\"Create with AI\"",
+                    "target": "text:\"使用 AI 创建\""
+                },
+                {
+                    "source": "text:\"Creating your agent...\"",
+                    "target": "text:\"正在创建您的代理...\""
+                },
+                {
+                    "source": "text:\"AI is crafting your agent's configuration...\"",
+                    "target": "text:\"AI 正在精心配置您的代理...\""
+                },
+                {
+                    "source": "textContent=\"@keyframes chatgpt-md-spin { to { transform: rotate(360deg); } }\"",
+                    "target": "textContent=\"@keyframes chatgpt-md-spin { to { transform: rotate(360deg); } }\""
+                },
+                {
+                    "source": "text:\"Create Agent\"",
+                    "target": "text:\"创建代理\""
+                },
+                {
+                    "source": "name:\"Choose agent\"",
+                    "target": "name:\"选择代理\""
+                },
+                {
+                    "source": "name:\"Create new agent\"",
+                    "target": "name:\"创建新代理\""
+                }
+            ]
+        }
+    }
+}
