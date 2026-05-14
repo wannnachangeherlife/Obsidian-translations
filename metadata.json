@@ -128,5 +128,31 @@
         "hash": "642a4c2f642a4c2f642a4c2f642a4c2f",
         "created_at": "2026-05-14T11:03:10.132Z",
         "updated_at": "2026-05-14T11:03:10.132Z"
+    },
+    {
+        "id": "G4Mbo7ENUaNB5qVv1mzCsEqVsVjpLFRG",
+        "plugin": "Things",
+        "type": "theme",
+        "language": "zh-cn",
+        "version": "1.0.0",
+        "supported_versions": "2.2.3",
+        "title": "Things",
+        "description": "Things Localization & Tweaks",
+        "hash": "37de6f5c37de6f5c37de6f5c37de6f5c",
+        "created_at": "2026-05-14T16:00:31.814Z",
+        "updated_at": "2026-05-14T16:00:31.814Z"
+    },
+    {
+        "id": "aluEsQ-8Fss3qM5I0FoWx9-9jkBiVY7-",
+        "plugin": "Minimal",
+        "type": "theme",
+        "language": "zh-cn",
+        "version": "1.0.0",
+        "supported_versions": "8.2.0",
+        "title": "Minimal",
+        "description": "Minimal Localization & Tweaks",
+        "hash": "1bcdf1ea1bcdf1ea1bcdf1ea1bcdf1ea",
+        "created_at": "2026-05-14T16:00:31.818Z",
+        "updated_at": "2026-05-14T16:00:31.818Z"
     }
 ]
